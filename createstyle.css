@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+
+    background-color: rgb(5, 10, 23);
+    text-align: left;
+
+}
+
+
+header {
+
+    background-color: rgb(177, 99, 243);
+}
+
+header .navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navbar .navmenu {
+    display: flex;
+    gap: 10px;
+    margin: 0% 40%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar .navmenu .navlink {
+    color: white;
+    padding: 10px 18px;
+    font-size: 19px;
+}
+
+
+.navbar .logo_text {
+
+    color: white;
+    font-size: 22px;
+
+}
+
+form {
+    color: white;
+    background: rgb(26, 24, 58);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+form .upload {
+    color: #666;
+    background-color: white;
+}
+
+input,
+button {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(177, 99, 243);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #562188;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
