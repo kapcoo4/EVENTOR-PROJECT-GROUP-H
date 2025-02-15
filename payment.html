@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="paymentstyle.css">
+</head>
+
+<body>
+    <div class="maintext">
+        <h1>Several Optionts to Pay </h1>
+        <p>You can pay using Fawry or Bankak</p>
+    </div>
+    <div class="logo-box">
+        <img src="images/bankaklogo.png" alt="" class="logo">
+        <img src="images/fawrylogo.png" alt="" class="logo">
+    </div>
+    <div class="container">
+        <h1>Make a Payment</h1>
+        <form id="payment-form" action="handle_payment.php" method="POST">
+            <label for="ticket-type">Ticket Type:</label>
+            <select id="ticket-type" name="ticket_type_id" required>
+                <option value="1">Early Bird</option>
+                <option value="2">Standard</option>
+                <option value="2">VIP</option>
+            </select>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment_method" required>
+                <option value="bankak">Bankak</option>
+                <option value="fawry">Fawry</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
