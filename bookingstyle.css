@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*navbar style*/
+header {
+
+
+    background-color: rgb(177, 99, 243);
+}
+
+header .navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navbar .navmenu {
+    display: flex;
+    gap: 10px;
+    margin: 0% 40%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a .navlink {
+    text-decoration: none;
+}
+
+.navbar .navmenu .navlink {
+    color: white;
+    padding: 10px 18px;
+    font-size: 19px;
+}
+
+
+.navbar .logo_text {
+
+    color: white;
+    font-size: 22px;
+
+}
+
+
+body {
+    color: white;
+    background-color: rgb(5, 10, 23);
+    font-size: 15px;
+    text-align: center;
+    font-family: "Poppins", serif;
+
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+    font-family: "Poppins", serif;
+    margin-bottom: 16px;
+}
+
+h3 {
+
+    text-align: center;
+
+
+}
+
+.smallp {
+    color: rgb(183, 179, 179);
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+main {
+    display: block;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: rgb(26, 24, 58);
+    width: 90%;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section .pic {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container {
+    font-family: "Poppins", serif;
+    margin: 2em;
+}
+
+
+
+.date {
+    font-size: 20px;
+}
+
+
+
+.location {
+    font-size: 20px;
+}
+
+
+.price {
+    font-size: 20px;
+}
+
+.book {
+    width: 50%;
+    color: white;
+    display: block;
+    background-color: rgb(177, 99, 243);
+    padding: 0.5em;
+    margin: auto;
+    border-radius: 3em;
+}
+
+/* **********
+Media
+********** */
+@media screen and (min-width: 687px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .card {
+        width: 30%;
+    }
+}
