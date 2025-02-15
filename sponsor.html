@@ -1,104 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponsor an Event</title>
-    <link rel="stylesheet" href="sponsorstyle.css">
+    <title>Become a Sponsor</title>
+    <link rel="stylesheet" href="sponsor1.css">
 </head>
-
-<header>
-    <nav class="navbar">
-        <h2 class="logo_text">Eventor</h2>
-        <ul class="navmenu">
-            <li class="navitem">
-                <a href="homepage.html" class="navlink">Home</a>
-            </li>
-            <li class="navitem">
-                <a href="booking.html" class="navlink">Book</a>
-            </li>
-            <li class="navitem">
-                <a href="createevent.html" class="navlink">Organize</a>
-            </li>
-            <li class="navitem">
-                <a href="sponsor.html" class="navlink">Sponsor</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>
-
-    <div class="events">
-        <section class="events-box">
-
-            <div class="event-list">
-                <div class="event">
-                    <h3>AL HILAL VS AL MERRICK</h3>
-                    <p> Location: KHARTOUM STADIUM</p>
-                    <p> Date: 12/JULY/2025</p>
-                    <p> Sponsorship Tiers: Gold, Silver, Bronze</p>
-
-                </div>
-
-                <div class="event">
-                    <h3> IT Batch 2020 GRADUATION </h3>
-                    <p> Location: CAIRO HALL</p>
-                    <p> Date: 6/AUGUST/2025</p>
-                    <p> Sponsorship Tiers: Gold, Silver , bronze</p>
-
-                </div>
-            </div>
-
-
-        </section>
-        <section class="events-box">
-
-            <div class="event-list">
-                <div class="event">
-                    <h3>Presedent Speach</h3>
-                    <p> Location: Green Yard</p>
-                    <p> Date: 12/JULY/2025</p>
-                    <p> Sponsorship Tiers: Gold, Silver, Bronze</p>
-
-                </div>
-
-                <div class="event">
-                    <h3> KP Brand Lanch </h3>
-                    <p> Location: Frendship Hall</p>
-                    <p> Date: 1/September/2025</p>
-                    <p> Sponsorship Tiers: Gold, Silver , bronze</p>
-
-                </div>
-            </div>
-
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book</a>
+        <a href="organize.html">Organize</a>
+        <a href="sponsor.html">Sponsor</a>
     </div>
-    </section>
-
-    <div class="events">
-
+    <div class="container">
+        <h2>Become a Sponsor</h2>
+        <p>Support our events and gain visibility for your brand.</p>
+        
+        <form class="sponsor-form">
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+            
+            <label for="contact-person">Contact Person:</label>
+            <input type="text" id="contact-person" name="contact-person" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="sponsorship-type">Sponsorship Type:</label>
+            <select id="sponsorship-type" name="sponsorship-type" required>
+                <option value="" disabled selected>Select a sponsorship type</option>
+                <option value="gold">Gold Sponsor</option>
+                <option value="silver">Silver Sponsor</option>
+                <option value="bronze">Bronze Sponsor</option>
+            </select>
+            
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit" class="btn">Submit Sponsorship</button>
+        </form>
     </div>
-
-    <form>
-        <h1>Choose an Event</h1>
-        <input type="text" placeholder="Company Name" required>
-        <input type="text" placeholder="Email" required>
-        <input type="text" placeholder="Chosen event" required>
-
-        <h2>Sponsorship type:</h2>
-        <div class="sponstype">
-            <label><input type="radio" required>Gold</label>
-            <label><input type="radio" required>Silver</label>
-            <label><input type="radio" required>Bronze</label>
-        </div>
-
-        <button type="submit">CONFIRM SPONSORSHIP</button>
-    </form>
-
-
-
-
 </body>
-
 </html>

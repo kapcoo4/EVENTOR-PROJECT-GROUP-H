@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Sessions</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="event form.html">Home</a>
+        <a href="book.html">Book</a>
+        <a href="organize.html">Organizer</a>
+        <a href="sponsor.html">Sponsor</a>
+    </div>
+    <div class="container">
+        <h2>Create an Event</h2>
+        <form class="event-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+            
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" required></textarea>
+            
+            <label for="event-time">Time:</label>
+            <input type="datetime-local" id="event-time" name="event-time" required>
+            
+            <label for="event-location">Event Location:</label>
+            <input type="text" id="event-location" name="event-location" required>
+            
+            <label for="event-image">Upload Event Image:</label>
+            <input type="file" id="event-image" name="event-image" accept="image/*">
+            
+            <button type="submit" class="btn">Create Event</button>
+        </form>
+    </div>
+</body>
+</html>
