@@ -14,34 +14,33 @@
             <h2 class="logo_text">Eventor</h2>
             <ul class="navmenu">
                 <li class="navitem">
-                    <a href="" class="navlink">Home</a>
+                    <a href="homepage.html" class="navlink">Home</a>
                 </li>
                 <li class="navitem">
-                    <a href="" class="navlink">Book</a>
+                    <a href="booking.html" class="navlink">Book</a>
                 </li>
                 <li class="navitem">
-                    <a href="" class="navlink">Organize</a>
+                    <a href="createevent.html" class="navlink">Organize</a>
                 </li>
                 <li class="navitem">
-                    <a href="" class="navlink">Sponsor</a>
+                    <a href="sponsor.html" class="navlink">Sponsor</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div class="mainsection">
 
-        <form>
+            <form action="create_event.php" method="POST">
             <h2>Create an Event</h2>
             <input type="text" name="event-name" placeholder="Event Name" required>
-            <input type="text" name="event-location" placeholder="Event Discription" required>
+            <input type="text" name="event-description" placeholder="Event Description" required>
             <label for="event-date">Enter Event Date and Time:</label>
             <input type="date" name="event-date" required>
             <input type="time" name="event-time" required>
             <input type="text" name="event-location" placeholder="Event Location" required>
-            <label for="event-image">Upload Event Image:</label>
-            <input class="upload" type="file" required>
+            <label for="event-price">Tickit Price:</label>
+            <input type="number" name="event-price" placeholder="Price in USD" required>
             <button type="submit">Create Event</button>
-
         </form>
 
     </div>
