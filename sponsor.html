@@ -80,21 +80,22 @@
 
     </div>
 
-    <form action="sponsor_event.php" method="POST">
+ <form action="sponsor_event.php" method="POST">
         <h1>Choose an Event</h1>
-        <input type="text" placeholder="Company Name" required>
-        <input type="text" placeholder="Email" required>
-        <input type="text" placeholder="Chosen event" required>
+        <input type="text" name="company_name" placeholder="Company Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" max="4" name="event_id" placeholder="Chosen event ID" required>
 
         <h2>Sponsorship type:</h2>
         <div class="sponstype">
-            <label><input type="radio" required>Gold</label>
-            <label><input type="radio" required>Silver</label>
-            <label><input type="radio" required>Bronze</label>
+            <label><input type="radio" name="sponsorship_tier" value="Gold" required> Gold</label>
+            <label><input type="radio" name="sponsorship_tier" value="Silver" required> Silver</label>
+            <label><input type="radio" name="sponsorship_tier" value="Bronze" required> Bronze</label>
         </div>
 
         <button type="submit">CONFIRM SPONSORSHIP</button>
     </form>
+      
 
 
 
