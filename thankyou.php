@@ -12,7 +12,6 @@
             font-family: Arial, sans-serif;
             background-color:rgb(5, 10, 23);
             text-align: center;
-            justify-content: center;
             align-items: center;
             color:rgb(177, 99, 243);;
             

@@ -103,14 +103,14 @@ h1 {
 
 #resform {
 	display: none;
-	/* initially invisible */
 	position: absolute;
 	top: 10%;
 	left: 30%;
 	width: 40vw;
 	padding: 20px;
-	background: #ECECEC;
+	background: rgb(5, 10, 23);
 	border: 2px solid #ccc;
+	color: white;
 }
 
 #resform h2,
@@ -132,6 +132,14 @@ label {
 input {
 	padding: 5px;
 	margin-bottom: 20px;
+
+	padding: 12px;
+	font-size: 16px;
+	width: 100%;
+	max-width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
 }
 
 label {
@@ -139,38 +147,6 @@ label {
 }
 
 #confirmbtn {
-	display: inline-block;
-	padding: 6px 14px 6px;
-	margin-bottom: 0;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	line-height: 20px;
-	color: #FFFFFF;
-	text-align: center;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	text-decoration: none;
-	vertical-align: middle;
-	cursor: pointer;
-	background-color: #0077C8;
-	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
-	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
-	background-image: -linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
-	background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
-	background-repeat: repeat-x;
-	border: 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .2);
-	-moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .2);
-	box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .2);
-	-webkit-transition: 0.1s;
-	-moz-transition: 0.1s;
-	transition: 0.1s;
-	-webkit-box-sizing: border-box;
-	/* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;
-	/* Firefox, other Gecko */
-	box-sizing: border-box;
-	/* Opera/IE 8+ */
+	background-color: rgb(177, 99, 243);
+	;
 }

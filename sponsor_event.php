@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $company_name = $_POST['company_name'];
     $email = $_POST['email'];
     $event_id = (int)$_POST['event_id'];
-    $tier = (int)$_POST['sponsorship_tier'];
+    $tier = $_POST['sponsorship_tier'];
 
 
     
@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssis", $company_name, $email, $event_id, $tier);
 
     if ($stmt->execute()) {
-        header("Location: thankyou.php");
+        header("Location: payment.html");
         exit();
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Error: an error occuard please try again" . $stmt->error;
     }
 
     $stmt->close();

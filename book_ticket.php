@@ -2,25 +2,26 @@
 include 'db_connect.php';
 session_start();
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html"); 
-    exit();
-}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['fname'];
-    
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $user_id = $_SESSION['user_id']; 
 
-
-    $stmt = $conn->prepare("INSERT INTO tickets (first_name, last_name) VALUES (?, ?)");
-    $stmt->bind_param("ss", $first_name, $last_name);
+   
+    $stmt = $conn->prepare("INSERT INTO tickets (user_id, fname, lname) VALUES (?, ?, ?)");
+    $stmt->bind_param("iss", $user_id, $fname, $lname);
 
     if ($stmt->execute()) {
-        header("Location: thankyou.php?message=ticket"); 
+        header("Location: payment.html");
         exit();
-    } 
+    } else {
+        echo "Error: An Error ocuurd please retry" . $stmt->error;
+    }
 
     $stmt->close();
 }
+
 $conn->close();
 ?>

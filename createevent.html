@@ -30,7 +30,7 @@
     </header>
     <div class="mainsection">
 
-            <form action="create_event.php" method="POST">
+        <form action="create_event.php" method="POST">
             <h2>Create an Event</h2>
             <input type="text" name="event-name" placeholder="Event Name" required>
             <input type="text" name="event-description" placeholder="Event Description" required>
@@ -39,7 +39,7 @@
             <input type="time" name="event-time" required>
             <input type="text" name="event-location" placeholder="Event Location" required>
             <label for="event-price">Tickit Price:</label>
-            <input type="number" name="event-price" placeholder="Price in USD" required>
+            <input type="number" min="0" name="event-price" placeholder="Price in SDG" required>
             <button type="submit">Create Event</button>
         </form>
 

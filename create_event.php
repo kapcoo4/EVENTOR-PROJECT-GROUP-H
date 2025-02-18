@@ -13,10 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $event_date = $_POST['event-date'] . ' ' . $_POST['event-time'];
     $location = $_POST['event-location'];
     $price = $_POST['event-price'];
-    $organizer_id = $_SESSION['user_id']; 
 
-    $stmt = $conn->prepare("INSERT INTO events (title, description, event_date, location, price, organizer_id) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssdi", $title, $description, $event_date, $location, $price, $organizer_id);
+    $stmt = $conn->prepare("INSERT INTO events (title, description, event_date, location, price ) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssd", $title, $description, $event_date, $location, $price);
 
     if ($stmt->execute()) {
         header("Location: thankyou.php?");
